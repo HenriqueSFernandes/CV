@@ -11,10 +11,23 @@
         
         <meta property="og:image" content="https://dummyimage.com/100x100/000/fff&text=CV" />
         <title>CV</title>
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow: hidden;
+            }
+            embed {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
     </head>
     <body>
-    <script type="text/javascript">
-        window.location.href = "./cv.pdf"
-    </script>
+        <embed src="./cv.pdf" type="application/pdf">
     </body>
 </html>
