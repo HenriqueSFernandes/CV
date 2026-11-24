@@ -9,7 +9,7 @@
 %	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 %	copies of the Software, and to permit persons to whom the Software is
 %	furnished to do so, subject to the following conditions:
-%	
+%
 %	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 %	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 %	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -17,7 +17,7 @@
 %	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 %	THE SOFTWARE.
-%	
+%
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -48,7 +48,7 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -63,7 +63,7 @@
 \usepackage{enumitem}
 
 % centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
@@ -72,11 +72,11 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
@@ -118,7 +118,7 @@
     }
     {
     \end{itemize}
-    \end{minipage}    
+    \end{minipage}
     }
 
 
@@ -129,7 +129,7 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -143,10 +143,10 @@
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Henrique Sardo Fernandes} \\[7.5pt]
-\href{https://github.com/HenriqueSFernandes}{\raisebox{-0.05\height}\faGithub\ HenriqueSFernandes} \ $|$ \ 
-\href{https://linkedin.com/in/-henriquesfernandes}{\raisebox{-0.05\height}\faLinkedin\ Henrique Fernandes} \ $|$ \ 
-\href{https://henriquesf.me}{\raisebox{-0.05\height}\faGlobe \ henriquesf.me} \\ 
-\href{mailto:henriquesardofernandes@google.com}{\raisebox{-0.05\height}\faEnvelope \ henriquesardofernandes@gmail.com} \ $|$ \ 
+\href{https://github.com/HenriqueSFernandes}{\raisebox{-0.05\height}\faGithub\ HenriqueSFernandes} \ $|$ \
+\href{https://linkedin.com/in/-henriquesfernandes}{\raisebox{-0.05\height}\faLinkedin\ Henrique Fernandes} \ $|$ \
+\href{https://henriquesf.me}{\raisebox{-0.05\height}\faGlobe \ henriquesf.me} \\
+\href{mailto:henriquesardofernandes@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ henriquesardofernandes@gmail.com} \ $|$ \
 \href{tel:+351926256277}{\raisebox{-0.05\height}\faMobile \ +351 926256277} \\
 \end{tabularx}
 
@@ -155,8 +155,9 @@
 %----------------------------------------------------------------------------------------
 
 %Interests/ Keywords/ Summary
-\section{Summary}
-Since I was very young, I've had a great interest in software engineering and the transformative power of technology in our world. I hold a BSc in Informatics and Computing Engineering from FEUP and am currently pursuing an MSc in the same field, where I am further developing my skills and knowledge. I am particularly interested in backend systems, DevOps, cloud architecture, and networking, with a passion for building resilient and efficient systems that support modern applications.
+% \section{Summary}
+% Since I was very young, I've had a great interest in software engineering and the transformative power of technology in our world. I hold a BSc in Informatics and Computing Engineering from FEUP and am currently pursuing an MSc in the same field, where I am further developing my skills and knowledge. I am particularly interested in backend systems, DevOps, cloud architecture, and networking, with a passion for building resilient and efficient systems that support modern applications.
+%
 
 %Experience
 \section{Work Experience}
@@ -172,25 +173,31 @@ For a Research Initiation Grant at INESC TEC, I worked on enhancing the security
 \begin{jobshort}{Software Engineer  Intern - ARMIS}{Feb 2025 - Jul 2025}
 For my Capstone Project at FEUP, I interned at Armis, where I worked with Intelligent Electronic Devices (IEDs) and developed a simulation environment for them. My work focused on using Microsoft technologies and a microservices architecture to create a scalable testing framework.
 \end{jobshort}
-  
-%Projects
-% \section{Projects}
 
-% \begin{tabularx}{\linewidth}{ @{}l r@{} }
-% \textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-% \multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-% \end{tabularx}
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{UNI - FEUP Mobile App} \textit{(Flutter)} & \hfill \href{https://github.com/NIAEFEUP/uni}{github.com/NIAEFEUP/UNI} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Core contributor and maintainer for NIFEUP's open-source mobile app used daily by thousands of students to access class schedules, exam calendars, campus maps, and canteen menus. Focused on performance, API integration, and long-term codebase reliability.}  \\
+\end{tabularx}
+
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+  \textbf{Populi - Portuguese Civic \& Parliamentary Platform} \textit{(Next.js)} & \hfill \href{https://populi.henriquesf.me}{populi.henriquesf.me} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Built at ShiftAPPens 2026 to make Portuguese parliamentary activity more accessible, aggregating data on Members of Parliament, political parties, and related news into a unified, searchable interface.}  \\
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\begin{tabularx}{\linewidth}{@{}l X@{}}
 2025 - present & MSc in Informatics and Computer Engineering at FEUP \hfill \\
 
-2022 - 2025 & BSc in Informatics and Computer Engineering at FEUP \hfill (17/20) \\ 
+2022 - 2025 & BSc in Informatics and Computer Engineering at FEUP \hfill (17/20) \\
 
-2013 - 2019 & Classical Piano at Aveiro Calouste Gulbenkian Music Conservatory \hfill \\ 
+2013 - 2019 & Classical Piano at Aveiro Calouste Gulbenkian Music Conservatory \hfill \\
 
 \end{tabularx}
 
@@ -201,10 +208,10 @@ For my Capstone Project at FEUP, I interned at Armis, where I worked with Intell
 
 % \textbf{Awards}
 
-% \begin{tabularx}{\linewidth}{@{}l X@{}}	
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
 % Winner & Nasa Space Apps Challenge Lisbon 2025 \\
 
-% Finalist & National Olympiad in Informatics 2022 \\ 
+% Finalist & National Olympiad in Informatics 2022 \\
 
 % \end{tabularx}
 
@@ -212,7 +219,7 @@ For my Capstone Project at FEUP, I interned at Armis, where I worked with Intell
 
 % \textbf{Certifications}
 
-% \begin{tabularx}{\linewidth}{@{}l X@{}}	
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
 
 % Deloitte & Generative AI Course \\
 
@@ -247,10 +254,10 @@ Responsible for overseeing the activities of the ACM FEUP Student Chapter, and I
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\textbf{Programming Languages} & \normalsize{C, C++, Python, Java, TypeScript, PHP, C\#} \\
-\textbf{Frameworks/Libraries} & \normalsize{Flutter, React, Laravel, Next.js} \\
-\textbf{Cloud/DevOps} & \normalsize{DevOps, Kubernetes, Infrastructure as Code, Google Cloud, Docker} \\
-\textbf{Concepts} & \normalsize{Backend Systems, Microservices, Distributed Systems, System Design} \\
+\textbf{Languages} & \normalsize{Rust, Python, TypeScript, C, C++, Java, C\#, PHP, Dart, SQL} \\
+\textbf{Frameworks \& Libraries} & \normalsize{React, Next.js, Flutter, Laravel} \\
+\textbf{Cloud \& DevOps} & \normalsize{Cloudflare (Workers, R2, Pages), Docker, Kubernetes, Google Cloud, GitHub Actions, Infrastructure as Code} \\
+\textbf{Tools \& Databases} & \normalsize{Git, Linux, PostgreSQL, Redis} \\
 \end{tabularx}
 
 % \vfill
